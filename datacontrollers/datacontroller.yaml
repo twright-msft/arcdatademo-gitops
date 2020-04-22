@@ -7,10 +7,20 @@ spec:
     adminCredentials: "controller-admin-secret"
     controlPlaneConfig:
     clusterName: arc
-    dockerRegistry: azurearcdata.azurecr.io
-    dockerRepository: azure-arc-data
-    dockerImageTag: private-preview-mar-2020
-    storageClass: default
-    serviceType: LoadBalancer
-    controllerPort: 30080
-    serviceProxyPort: 30777
+        clusterName: arcdatademo
+        dockerRegistry: azurearcdata.azurecr.io
+        dockerRepository: azure-arc-data
+        dockerImageTag: private-preview-mar-2020
+        storageClass: default
+        serviceType: LoadBalancer
+        controllerPort: 30080
+        serviceProxyPort: 30777
+        settings:
+            billingEnabled: "True"
+        dataController:
+            displayName: "foo"
+            connectionMode: "disconnected"
+            billingMode: "consumption"
+            subscription: "foo"
+            resourceGroup: "foo"
+            location: "foo"

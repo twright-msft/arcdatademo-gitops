@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: bootstrapper
+  namespace: arc
   labels:
     app: bootstrapper
 spec:

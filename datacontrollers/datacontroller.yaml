@@ -1,8 +1,8 @@
 apiVersion: arcdata.microsoft.com/v1alpha1
 kind: ControlPlane
 metadata:
-name: controlplane
-namespace: arc
+    name: controlplane
+    namespace: arc
 spec:
     adminCredentials: "controller-admin-secret"
     controlPlaneConfig:

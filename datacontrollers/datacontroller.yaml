@@ -18,7 +18,7 @@ spec:
         settings:
             billingEnabled: "True"
         dataController:
-            displayName: "foo"
+            displayName: "arcdatademo"
             connectionMode: "disconnected"
             billingMode: "consumption"
             subscription: "foo"

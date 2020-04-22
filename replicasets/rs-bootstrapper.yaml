@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: bootstrapper
+  labels:
+    app: bootstrapper
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bootstrapper
+  template:
+    metadata:
+      labels:
+        app: bootstrapper
+    spec:
+      serviceAccountName: sa-bootstrapper
+      containers:
+      - name: bootstrapper
+        image: hlsaris.azurecr.io/aris-p-dsmain-standard/mssql-bootstrapper:latest
+        env:
+        - name: ACCEPT_EULA
+          value: "Y"

@@ -6,7 +6,6 @@ metadata:
 spec:
     adminCredentials: "controller-admin-secret"
     controlPlaneConfig:
-        clusterName: arc
         clusterName: arcdatademo
         dockerRegistry: azurearcdata.azurecr.io
         dockerRepository: azure-arc-data

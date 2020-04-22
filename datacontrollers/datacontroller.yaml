@@ -1,0 +1,15 @@
+apiVersion: arcdata.microsoft.com/v1alpha1
+kind: ControlPlane
+metadata:
+name: controlplane
+spec:
+    adminCredentials: "controller-admin-secret"
+    controlPlaneConfig:
+    clusterName: arc
+    dockerRegistry: azurearcdata.azurecr.io
+    dockerRepository: azure-arc-data
+    dockerImageTag: private-preview-mar-2020
+    storageClass: default
+    serviceType: LoadBalancer
+    controllerPort: 30080
+    serviceProxyPort: 30777

@@ -11,7 +11,7 @@ spec:
         dockerRepository: azure-arc-data
         dockerImageTag: private-preview-mar-2020
         storageClass: default
-        serviceType: LoadBalancer
+        serviceType: NodePort
         controllerPort: 30080
         serviceProxyPort: 30777
         settings:
